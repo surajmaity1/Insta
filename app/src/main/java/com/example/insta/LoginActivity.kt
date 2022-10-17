@@ -54,6 +54,7 @@ class LoginActivity : AppCompatActivity() {
                         Toast.makeText(this,
                             task.exception!!.message.toString(),
                             Toast.LENGTH_SHORT).show()
+                        btnLogin.isEnabled = true
                     }
                 }
         }

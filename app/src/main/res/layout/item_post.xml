@@ -13,13 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="8dp">
-
-        <TextView
-            android:id="@+id/tvUsername"
+        
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="suraj"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Suraj"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/tvRelativeTime"
